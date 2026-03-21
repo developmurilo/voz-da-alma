@@ -1,258 +1,82 @@
-# Instituto Voz da Alma — Versão Supabase 🟢
+# Instituto Voz da Alma 🧠💙
 
-Site institucional com **Next.js 15** + **Supabase** (banco de dados + storage de fotos).  
-Deploy: **Vercel** (gratuito).  
-Custo mensal total: **R$ 0,00** até crescer bastante.
+Um site institucional completo e moderno desenvolvido para uma clínica interdisciplinar especializada no desenvolvimento infantil, autismo (TEA) e neurodivergências.
 
----
+O projeto conta com um front-end de alta performance, design responsivo com foco em UX/UI lúdico e profissional, e um **Painel Administrativo exclusivo** criado do zero para o cliente gerenciar as postagens do blog e as imagens da galeria de forma autônoma.
 
-## Por que esta versão é mais simples?
+## 🚀 Tecnologias Utilizadas
 
-```
-Antes (WordPress):                Agora (Supabase):
-━━━━━━━━━━━━━━━━━━━━━            ━━━━━━━━━━━━━━━━━━━━━
-Vercel (Next.js)      →          Vercel (Next.js)
-+ Hostinger (R$12/mês)           + Supabase (gratuito)
-+ WordPress instalado            Painel admin = dentro do próprio site
-+ Plugin WPGraphQL               Sem servidor PHP
-+ Subdomínio configurado         Sem subdomínio
-= muito setup                    = tudo em 2 serviços simples
-```
+- **[Next.js 15](https://nextjs.org/)** (App Router) - Framework React principal do projeto, usado para as rotas da interface UI e as rotas de API serverless.
+- **[React 18](https://react.dev/)** - Biblioteca JavaScript base.
+- **[Tailwind CSS](https://tailwindcss.com/)** - Estilização responsiva, construção da identidade visual (Design System) com variáveis exclusivas e layouts fluidos.
+- **[Supabase](https://supabase.com/)** - Backend as a Service (BaaS) operando de forma serverless. Empregado para o Banco de Dados (PostgreSQL) e o Storage (Upload/Get de mídias).
+- **[Resend](https://resend.com/)** - Integração robusta via API para o envio automatizado de formulários e e-mails de contato.
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem forte para garantir integridade na arquitetura e nas requisições do BD.
 
----
+## ✨ Principais Funcionalidades e Diferenciais
 
-## 🚀 Setup em 4 passos
+- **Design Premium e Acessível:** Interface desenhada para ser rápida e acessível. Uso de elementos orgânicos, scroll suave, glassmorphism moderado e responsividade rigorosa do Mobile ao Widescreen.
+- **Painel Administrativo Full-Stack (`/admin`):**
+  - Autenticação e Sistema de Sessão com Tokens JWT para proteção das rotas privadas.
+  - Editor WYSIWYG de texto rico (TipTap) para fácil formatação, publicação e exclusão de artigos no Blog.
+  - Upload múltiplo e gestão visual de imagens para o componente de Galeria.
+- **Formulário Dinâmico:** Envio contínuo de contatos pela página do usuário, com tratamento de erros, validações e alertas, integrado diretamente ao fluxo de e-mails via Resend.
+- **Otimização Extrema de SEO Técnico (Search Engine Optimization):**
+  - Geração nativa e dinâmica de Metadados e imagens do Open Graph.
+  - Sitemaps (`sitemap.xml`) e `robots.txt` criados de forma dinâmica para indexar novos artigos automaticamente no Google.
+  - Injeção de marcações Schema.org e Dados Estruturados (Local Business, Articles e FAQ pages) maximizando as chances de exibir _Rich Snippets_.
+- **Performance e Web Vitals:** Carregamento otimizado com o componente `next/image` e tipografia nativa (`next/font`) que minimizam requisições bloqueantes.
 
-### PASSO 1 — Criar conta no Supabase (5 minutos)
+## 🛠 Como executar o projeto localmente
 
-1. Acesse **supabase.com** e crie uma conta gratuita
-2. Clique em **"New Project"**
-3. Preencha:
-   - Organization: seu nome ou nome do cliente
-   - Project name: `instituto-voz-da-alma`
-   - Database Password: crie uma senha forte e **anote ela**
-   - Region: **South America (São Paulo)**
-4. Aguarde ~2 minutos para o projeto ser criado
-
-### PASSO 2 — Criar o banco de dados (3 minutos)
-
-1. No painel do Supabase, clique em **"SQL Editor"** no menu esquerdo
-2. Clique em **"New query"**
-3. Abra o arquivo `supabase/schema.sql` deste projeto
-4. Copie todo o conteúdo e cole no SQL Editor
-5. Clique em **"Run"** (botão verde)
-6. Deve aparecer "Success" ✅
-
-### PASSO 3 — Pegar as chaves de API (2 minutos)
-
-1. No Supabase, vá em **Settings → API** (menu esquerdo)
-2. Você verá três valores importantes:
-
-```
-Project URL:     https://XXXXXXXXXXX.supabase.co
-anon public:     eyJhbGci...  (chave longa)
-service_role:    eyJhbGci...  (chave longa — nunca exponha esta!)
-```
-
-3. Copie esses três valores
-
-### PASSO 4 — Configurar o projeto local
-
-1. Na pasta do projeto, crie o arquivo `.env.local`:
+1. Clone este repositório:
 ```bash
-cp .env.example .env.local
+git clone https://github.com/SeuUsuario/seu-repositorio.git
+cd seu-repositorio
 ```
 
-2. Abra `.env.local` e preencha com seus dados:
-```bash
-NEXT_PUBLIC_SUPABASE_URL=https://XXXXXXXXXXX.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGci...sua-anon-key
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGci...sua-service-role-key
-
-ADMIN_PASSWORD=escolha-uma-senha-para-o-painel
-JWT_SECRET=qualquer-texto-longo-de-pelo-menos-32-caracteres-aqui
-
-NEXT_PUBLIC_SITE_URL=https://www.institutovozdaalma.com.br
-```
-
-3. Instale as dependências e rode:
+2. Instale as dependências:
 ```bash
 npm install
+```
+
+3. Configure as variáveis de ambiente renomeando o arquivo base ou criando um arquivo `.env.local` na raiz:
+```env
+NEXT_PUBLIC_SUPABASE_URL=sua_url_do_supabase
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_anon_key_do_supabase
+SUPABASE_SERVICE_ROLE_KEY=sua_service_role_key
+
+ADMIN_PASSWORD=senha_desejada_para_o_painel
+JWT_SECRET=sua_chave_secreta_jwt
+
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+
+RESEND_API_KEY=sua_chave_da_api_do_resend
+EMAIL_TO=email_que_recebera_mensagens@gmail.com
+```
+
+4. Execute o servidor de desenvolvimento:
+```bash
 npm run dev
 ```
 
-4. Acesse **localhost:3000** — site funcionando! ✅
-5. Acesse **localhost:3000/admin/login** — painel admin! ✅
+5. O site principal estará disponível em `http://localhost:3000` e a interface de administrador em `http://localhost:3000/admin/login`.
 
----
+## 📂 Arquitetura Central
 
-## 🌐 Deploy na Vercel (10 minutos)
-
-### 1. Criar conta na Vercel
-Acesse **vercel.com** e crie conta gratuita (pode entrar com GitHub, Google ou e-mail)
-
-### 2. Instalar a CLI
-```bash
-npm install -g vercel
-```
-
-### 3. Fazer o deploy
-No terminal, dentro da pasta do projeto:
-```bash
-vercel login
-vercel
-```
-
-Responda as perguntas:
-```
-Set up and deploy? → Y (Enter)
-Which scope? → seu usuário (Enter)
-Link to existing project? → N (Enter)
-Project name? → instituto-voz-da-alma (Enter)
-Directory? → . (ponto, Enter)
-```
-
-A Vercel vai gerar uma URL temporária como:  
-`instituto-voz-da-alma.vercel.app`
-
-### 4. Adicionar variáveis de ambiente na Vercel
-
-1. Acesse **vercel.com** no navegador
-2. Clique no seu projeto
-3. Vá em **Settings → Environment Variables**
-4. Adicione cada variável do seu `.env.local` uma por uma:
-
-| Nome | Valor |
-|------|-------|
-| `NEXT_PUBLIC_SUPABASE_URL` | sua URL do Supabase |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | sua anon key |
-| `SUPABASE_SERVICE_ROLE_KEY` | sua service role key |
-| `ADMIN_PASSWORD` | sua senha do painel |
-| `JWT_SECRET` | seu texto secreto |
-| `NEXT_PUBLIC_SITE_URL` | https://www.seudominio.com.br |
-
-### 5. Fazer o deploy final
-```bash
-vercel --prod
-```
-
-Site no ar! 🎉
-
----
-
-## 🌍 Apontar o domínio do cliente
-
-### No painel da Vercel:
-1. Seu projeto → **Settings → Domains**
-2. Clique em **"Add Domain"**
-3. Digite: `www.institutovozdaalma.com.br`
-4. A Vercel vai mostrar os registros DNS necessários
-
-### No Registro.br:
-1. Acesse **registro.br** e faça login com os dados do cliente
-2. Clique no domínio → **Editar Zona DNS**
-3. Adicione os registros que a Vercel indicou:
-
-```
-Tipo A    →  @    →  76.76.21.21
-Tipo CNAME →  www  →  cname.vercel-dns.com
-```
-
-4. Aguarde até 1h para propagar (geralmente menos de 15 min)
-5. A Vercel instala o SSL (HTTPS) automaticamente ✅
-
----
-
-## ✍️ Como usar o painel admin
-
-Acesse: `www.seudominio.com.br/admin/login`
-
-### Publicar um artigo:
-1. Login com a senha que você configurou em `ADMIN_PASSWORD`
-2. Dashboard → **"Novo artigo"**
-3. Preencha: título, texto, categoria, imagem de capa
-4. Clique **"Publicar"** — aparece no site imediatamente! ✅
-
-### Adicionar fotos à galeria:
-1. Dashboard → **"Adicionar fotos"**
-2. Clique na área de upload ou arraste as fotos
-3. Pode enviar várias fotos de uma vez
-4. Clique **"Enviar"** — aparecem na galeria imediatamente! ✅
-
----
-
-## 📊 Limites do plano gratuito do Supabase
-
-| Recurso | Limite gratuito | Suficiente para? |
-|---------|----------------|------------------|
-| Banco de dados | 500 MB | ~50.000 artigos |
-| Storage (fotos) | 1 GB | ~2.000 fotos em boa qualidade |
-| Transferência | 5 GB/mês | ~50.000 visitas/mês |
-| Requisições API | 500K/mês | Muito mais que suficiente |
-
-Quando precisar de mais, o plano Pro custa **USD $25/mês** (~R$130/mês).
-
----
-
-## 🔍 SEO — O que está configurado
-
-✅ Meta titles e descriptions dinâmicos por página  
-✅ Open Graph (compartilhamento em redes sociais)  
-✅ Schema.org (Organization, Article, FAQ, Breadcrumb)  
-✅ Sitemap.xml dinâmico — atualiza automaticamente ao publicar posts  
-✅ robots.txt  
-✅ URLs amigáveis (/blog/nome-do-artigo)  
-✅ HTTPS automático pela Vercel  
-✅ Headers de segurança HTTP  
-
-### Para maximizar o SEO após o deploy:
-1. Acesse **search.google.com/search-console** e cadastre o site
-2. Envie o sitemap: `www.seudominio.com.br/sitemap.xml`
-3. Publique artigos regularmente (mínimo 2x por semana)
-4. Preencha todos os campos ao publicar (título, resumo, imagem)
-
----
-
-## 📁 Estrutura do Projeto
-
-```
+```text
 src/
-├── app/
-│   ├── page.tsx              # Home
-│   ├── blog/                 # Lista + posts individuais
-│   ├── galeria/              # Galeria de fotos
-│   ├── contato/              # Formulário de contato
-│   ├── privacidade/          # Política de Privacidade (LGPD)
-│   ├── admin/
-│   │   ├── login/            # Tela de login
-│   │   ├── dashboard/        # Painel principal
-│   │   ├── posts/novo/       # Editor de artigos
-│   │   └── galeria/          # Upload de fotos
-│   └── api/
-│       ├── auth/             # Login/logout
-│       ├── posts/            # CRUD de posts
-│       ├── gallery/          # Upload e gestão de fotos
-│       └── contact/          # Formulário de contato
-├── lib/
-│   ├── supabase.ts           # ← Toda integração com Supabase
-│   ├── auth.ts               # JWT para o painel admin
-│   ├── seo.ts                # Schema.org e metadados
-│   └── utils.ts              # Funções auxiliares
-└── supabase/
-    └── schema.sql            # ← Execute este SQL no Supabase
+├── app/                  # Ecossistema do Next.js (Pages, Layouts, Loading states)
+│   ├── admin/            # Subsistema administrativo, páginas de dashboard e criação de posts
+│   ├── api/              # Tráfego backend e endpoints Serverless (auth, posts, resend)
+│   └── (frontend)        # Telas institucionais: blog, faq, contato, sobre, galeria
+├── components/           # Camada de componentes burros (Dumb Components) e Layout (Header/Footer)
+├── lib/                  # Helpers lógicos vitais da aplicação
+│   ├── supabase.ts       # Setup e integração da SDK
+│   ├── seo.ts            # Gerador parametrizado de meta tags e construtor Schema.org
+│   └── auth.ts           # Validação e encriptação (Jose/JWT)
+└── styles/               # Ponto de entrada do Tailwind, variáveis raiz e tipografia
 ```
 
 ---
-
-## Comparação com a versão WordPress
-
-| | Versão WordPress | Versão Supabase (esta) |
-|---|---|---|
-| Custo mensal | ~R$12/mês (Hostinger) | R$0 |
-| Setup inicial | Complexo | Simples |
-| Painel de conteúdo | WordPress (completo) | Admin próprio no site |
-| Editor de texto | Gutenberg (rico) | Texto com HTML básico |
-| Plugins/extensões | Milhares disponíveis | Não se aplica |
-| Performance | Boa | Excelente |
-| Escalabilidade | Limitada ao plano | Alta |
-
+*Este projeto demonstra a habilidade arquitetural de conceber um ecossistema CMS full-stack com ferramentas modernas, descartando uso de sistemas blocados e pesados (como WordPress padrão), e integrando todo o fluxo de operação diretamente em uma única codebase otimizada.*
