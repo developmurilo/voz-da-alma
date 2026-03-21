@@ -464,8 +464,8 @@ export default async function HomePage() {
                 <div className="flex-shrink-0 flex h-11 w-11 items-center justify-center rounded-2xl bg-primary-100">
                   <Icon size={20} className="text-primary-600" />
                 </div>
-                <div>
-                  <h3 className="mb-2 font-bold text-neutral-900">{title}</h3>
+                <div className="flex-1 min-w-0">
+                  <h3 className="mb-2 font-bold text-neutral-900 break-words hyphens-auto">{title}</h3>
                   <p className="text-sm text-neutral-500 leading-relaxed">{desc}</p>
                 </div>
               </div>

@@ -137,7 +137,7 @@ export default function SobrePage() {
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100">
                   <Icon size={22} className="text-primary-600" />
                 </div>
-                <h3 className="mb-2 text-lg font-bold text-neutral-900">{title}</h3>
+                <h3 className="mb-2 text-lg font-bold text-neutral-900 break-words hyphens-auto">{title}</h3>
                 <p className="text-sm text-neutral-500 leading-relaxed">{desc}</p>
               </div>
             ))}
