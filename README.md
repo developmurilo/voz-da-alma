@@ -1,10 +1,10 @@
-# Instituto Voz da Alma 🧠💙
+# Instituto Voz da Alma 
 
 Um site institucional completo e moderno desenvolvido para uma clínica interdisciplinar especializada no desenvolvimento infantil, autismo (TEA) e neurodivergências.
 
 O projeto conta com um front-end de alta performance, design responsivo com foco em UX/UI lúdico e profissional, e um **Painel Administrativo exclusivo** criado do zero para o cliente gerenciar as postagens do blog e as imagens da galeria de forma autônoma.
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **[Next.js 15](https://nextjs.org/)** (App Router) - Framework React principal do projeto, usado para as rotas da interface UI e as rotas de API serverless.
 - **[React 18](https://react.dev/)** - Biblioteca JavaScript base.
@@ -13,7 +13,7 @@ O projeto conta com um front-end de alta performance, design responsivo com foco
 - **[Resend](https://resend.com/)** - Integração robusta via API para o envio automatizado de formulários e e-mails de contato.
 - **[TypeScript](https://www.typescriptlang.org/)** - Tipagem forte para garantir integridade na arquitetura e nas requisições do BD.
 
-## ✨ Principais Funcionalidades e Diferenciais
+##  Principais Funcionalidades e Diferenciais
 
 - **Design Premium e Acessível:** Interface desenhada para ser rápida e acessível. Uso de elementos orgânicos, scroll suave, glassmorphism moderado e responsividade rigorosa do Mobile ao Widescreen.
 - **Painel Administrativo Full-Stack (`/admin`):**
@@ -27,7 +27,7 @@ O projeto conta com um front-end de alta performance, design responsivo com foco
   - Injeção de marcações Schema.org e Dados Estruturados (Local Business, Articles e FAQ pages) maximizando as chances de exibir _Rich Snippets_.
 - **Performance e Web Vitals:** Carregamento otimizado com o componente `next/image` e tipografia nativa (`next/font`) que minimizam requisições bloqueantes.
 
-## 🛠 Como executar o projeto localmente
+##  Como executar o projeto localmente
 
 1. Clone este repositório:
 ```bash
@@ -62,7 +62,7 @@ npm run dev
 
 5. O site principal estará disponível em `http://localhost:3000` e a interface de administrador em `http://localhost:3000/admin/login`.
 
-## 📂 Arquitetura Central
+##  Arquitetura Central
 
 ```text
 src/
