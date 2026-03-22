@@ -21,8 +21,13 @@ const montserrat = Montserrat({
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.institutovozdaalma.com.br'
 
+const getBaseUrl = () => {
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`
+  return SITE_URL
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(getBaseUrl()),
   title: {
     default: 'Instituto Voz da Alma | A música que liberta a alma',
     template: '%s | Instituto Voz da Alma',
