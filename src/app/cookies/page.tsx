@@ -69,7 +69,7 @@ export default function CookiesPage() {
             </section>
             <section>
               <h2>Contato</h2>
-              <p>Dúvidas sobre cookies? Entre em contato: <a href="mailto:privacidade@institutovozdaalma.com.br">privacidade@institutovozdaalma.com.br</a></p>
+              <p>Dúvidas sobre cookies? Entre em contato: <a href="mailto:contato@institutovozdaalma.com.br">contato@institutovozdaalma.com.br</a></p>
             </section>
           </div>
         </div>

@@ -138,8 +138,8 @@ export default function PrivacidadePage() {
               </ul>
               <p>
                 Para exercer seus direitos, entre em contato pelo e-mail:{' '}
-                <a href="mailto:privacidade@institutovozdaalma.com.br">
-                  privacidade@institutovozdaalma.com.br
+                <a href="mailto:contato@institutovozdaalma.com.br">
+                  contato@institutovozdaalma.com.br
                 </a>
               </p>
             </section>
@@ -166,8 +166,8 @@ export default function PrivacidadePage() {
               <h2>10. Contato e DPO</h2>
               <p>
                 Para dúvidas sobre esta política ou para exercer seus direitos:{' '}
-                <a href="mailto:privacidade@institutovozdaalma.com.br">
-                  privacidade@institutovozdaalma.com.br
+                <a href="mailto:contato@institutovozdaalma.com.br">
+                  contato@institutovozdaalma.com.br
                 </a>
               </p>
               <p>

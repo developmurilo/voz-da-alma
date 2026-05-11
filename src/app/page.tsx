@@ -25,53 +25,59 @@ const SPECIALTIES = [
   {
     icon: Brain,
     title: 'Terapia ABA',
-    desc: 'Abordagem científica aplicada para desenvolvimento de habilidades em crianças no espectro autista.',
+    desc: 'A ABA utiliza estratégias como reforço positivo, ensino estruturado e aprendizagem em contextos naturais para desenvolver habilidades sociais, comunicativas, acadêmicas e de autonomia. Não é um protocolo único, mas um conjunto de técnicas individualizadas, adaptadas às necessidades de cada pessoa. Embora seja mais conhecida pela aplicação no autismo, a ABA também é utilizada no desenvolvimento infantil típico, dificuldades de aprendizagem, habilidades sociais, autonomia, orientação de pais e no desenvolvimento de adolescentes e adultos. Isso porque é baseada em princípios científicos do comportamento humano, aplicáveis a diferentes contextos e fases da vida.',
     color: 'bg-primary-50 text-primary-600',
   },
   {
     icon: Activity,
     title: 'Terapia Ocupacional',
-    desc: 'Desenvolvimento de habilidades motoras, regulação sensorial e autonomia nas atividades diárias.',
+    desc: 'A Terapia Ocupacional promove o desenvolvimento da autonomia e da funcionalidade em diferentes fases da vida, apoiando habilidades sensoriais, motoras, cognitivas e sociais. Com abordagem baseada em evidências, o cuidado é individualizado e focado na participação significativa nas atividades do cotidiano.',
     color: 'bg-amber-50 text-amber-600',
   },
   {
     icon: Mic,
     title: 'Fonoaudiologia',
-    desc: 'Estímulo e desenvolvimento da fala, articulação, linguagem e acompanhamento alimentar.',
+    desc: 'A Fonoaudiologia atua no desenvolvimento da comunicação, linguagem, fala e alimentação, apoiando crianças, adolescentes e adultos. As intervenções são individualizadas e baseadas em evidências científicas, promovendo funcionalidade e qualidade de vida.',
     color: 'bg-blue-50 text-blue-600',
   },
   {
     icon: Music,
     title: 'Musicoterapia',
-    desc: 'Uso de elementos musicais para o estímulo global, comunicação e interação social.',
+    desc: 'A Musicoterapia utiliza a música como ferramenta terapêutica para promover desenvolvimento emocional, cognitivo, social e comunicativo em diferentes fases da vida, com intervenções estruturadas e baseadas em evidências',
     color: 'bg-violet-50 text-violet-600',
+  },
+  {
+    icon: Heart,
+    title: 'Psicoterapia',
+    desc: 'A Psicoterapia oferece um espaço seguro e acolhedor para crianças, adolescentes e adultos, promovendo desenvolvimento emocional, habilidades sociais e bem-estar psicológico, por meio de abordagens fundamentadas em evidências científicas.',
+    color: 'bg-rose-50 text-rose-600',
   },
 ]
 
 const FAQS = [
   {
     question: 'O que é o Instituto Voz da Alma?',
-    answer: 'Somos uma clínica interdisciplinar em Hortolândia especializada no desenvolvimento infantil. Contamos com fonoaudiologia, terapia ocupacional, musicoterapia, psicologia e intervenção ABA para apoiar crianças com autismo (TEA) e outras condições.',
+    answer: 'O Instituto Voz da Alma é um espaço interdisciplinar dedicado ao desenvolvimento humano em todas as fases da vida. Temos um olhar que abrange principalmente crianças neurodivergentes, com foco no espectro autista e outros transtornos do neurodesenvolvimento.\n\nNosso objetivo é oferecer um cuidado profissional, capacitado e humanizado, acolhendo de forma individualizada cada pessoa e seu núcleo familiar.\nDesenvolvemos um plano terapêutico e através de diferentes especialidades terapêuticas, como ABA, terapia ocupacional, fonoaudiologia, psicoterapia e musicoterapia, estruturado de forma individualizada para cada paciente e baseado em evidências científicas, promovendo o desenvolvimento emocional, social, cognitivo e funcional, com atenção especial às necessidades de crianças, adolescentes e adultos.\n\nAcreditamos no cuidado intencional, no fortalecimento dos cuidadores e na construção de caminhos de desenvolvimento com respeito ao tempo e à singularidade de cada indivíduo.\n\nNo Instituto Voz da Alma, acolhemos histórias, fortalecemos vínculos e caminhamos juntos no desenvolvimento do que há de mais precioso: a pessoa e sua família.',
   },
   {
-    question: 'Com que idade o autismo pode ser identificado?',
-    answer: 'Os primeiros sinais do TEA podem surgir entre 12 e 24 meses de idade. Quanto mais cedo são identificados e acompanhados, maiores são as possibilidades de intervenção e desenvolvimento de habilidades.',
+    question: 'Com quantos anos o autismo pode ser identificado?',
+    answer: 'Os primeiros sinais do autismo podem surgir entre 12 e 24 meses de idade.\nNo entanto, o diagnóstico pode ocorrer em diferentes fases da infância, dependendo das características apresentadas e do desenvolvimento de cada pessoa.\nAtualmente, com o avanço dos estudos, muitos adolescentes e adultos tem recebido diagnósticos, mesmo que mais tardios, e tem sido acompanhados com as terapias necessárias para ajuda-los a lidar com suas necessidades.\nQuanto mais cedo os sinais são identificados e acompanhados, maiores são as possibilidades de intervenção e desenvolvimento de habilidades importantes.',
   },
   {
     question: 'Como funciona a avaliação inicial?',
-    answer: 'A nossa avaliação busca compreender o desenvolvimento da criança de forma ampla, englobando entrevista com os responsáveis, análise histórica e observação clínica para definirmos o melhor plano terapêutico.',
+    answer: 'O processo de avaliação inicial busca compreender o desenvolvimento da criança de forma ampla.\nGeralmente envolve:\n    • entrevista com os pais ou responsáveis\n    • análise do histórico de desenvolvimento da criança\n    • observação clínica\n    • aplicação de protocolos e instrumentos específicos, quando necessário\nCom base nessa avaliação, a equipe define um plano terapêutico personalizado.',
   },
   {
-    question: 'Vocês atendem por convênio?',
-    answer: 'Aceitamos certos convênios diretamente ou por reembolso. Recomendamos que entre em contato direto pelo WhatsApp para passarmos as informações atualizadas sobre a nossa cobertura de planos.',
+    question: 'A clínica atende convênios?',
+    answer: 'Alguns convênios podem ser aceitos diretamente ou utilizados por meio de reembolso, dependendo do plano de saúde.\nPara obter informações atualizadas sobre convênios e formas de atendimento, recomendamos entrar em contato com nossa equipe.',
   },
 ]
 
-const NUMBERS = [
-  { value: '500+', label: 'Pacientes atendidos' },
-  { value: '8+', label: 'Anos de experiência' },
-  { value: '98%', label: 'Taxa de satisfação' },
-  { value: '12+', label: 'Especialidades' },
+const TOPICS = [
+  'Profissionais especializados',
+  'Atendimento humanizado',
+  'Cultura de acolhimento Familiar intencional',
+  'Acompanhamento intencional de pacientes e cuidadores',
 ]
 
 const HOME_FAQ_SCHEMA = faqSchema(FAQS)
@@ -109,7 +115,7 @@ export default async function HomePage() {
           */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed opacity-80"
-            style={{ backgroundImage: 'url("/images/banner-home.png")', backgroundPosition: 'center 30%' }}
+            style={{ backgroundImage: 'url("/images/banner-home.png ")', backgroundPosition: 'center 30%' }}
             aria-label="Música e Terapia"
           />
           {/* Leve filtro escurecedor para garantir leitura (sem afetar as bordas de transparência do mask-image) */}
@@ -134,14 +140,14 @@ export default async function HomePage() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-accent-300 animate-pulse" />
               <span className="text-sm font-medium text-white/90 tracking-wide uppercase">
-                Desenvolvimento Infantil Especializado
+                Desenvolvimento especializado
               </span>
             </div>
 
-            <h1 className="mb-6 font-display font-bold text-white leading-tight">
-              Apoiando o desenvolvimento do seu{' '}
+            <h1 className="mb-6 font-display font-bold text-white leading-tight text-3xl md:text-4xl lg:text-5xl">
+              Acolhimento e escuta para juntos construirmos caminhos de{' '}
               <span className="relative">
-                <span className="text-accent-300">maior tesouro.</span>
+                <span className="text-accent-300">bem estar.</span>
                 <svg
                   className="absolute -bottom-2 left-0 w-full"
                   viewBox="0 0 300 12"
@@ -159,12 +165,12 @@ export default async function HomePage() {
             </h1>
 
             <p className="mb-10 max-w-xl text-lg text-white/80 leading-relaxed font-light">
-              O Instituto Voz da Alma é uma clínica interdisciplinar dedicada a transformar a vida de crianças com autismo (TEA) e neurodivergências através do acolhimento e da neurociência.
+              O Instituto Voz da Alma é uma clínica interdisciplinar dedicada a transformar a vida de crianças neurodivergentes, acolhendo suas famílias com sensibilidade, construindo caminhos de desenvolvimento e fortalecendo o que há de mais valioso: cada criança, cada história e cada família.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/contato" className="btn-primary bg-white !text-deep-900 hover:bg-neutral-50 shadow-xl">
-                <Music size={18} />
+
                 Agendar consulta
               </Link>
               <Link href="/sobre" className="btn-outline-light">
@@ -176,7 +182,7 @@ export default async function HomePage() {
             {/* Trust indicators */}
             <div className="mt-14 flex flex-wrap gap-6">
               {[
-                'CRP Ativo',
+
                 'Sigilo garantido',
                 'Online e presencial',
               ].map(item => (
@@ -196,14 +202,16 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ===================== NUMBERS ===================== */}
+      {/* ===================== TOPICS ===================== */}
       <section className="bg-white border-b border-neutral-100">
-        <div className="container-site py-14">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            {NUMBERS.map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <p className="mb-1 font-display text-4xl font-bold text-primary-600">{value}</p>
-                <p className="text-sm text-neutral-500 font-medium">{label}</p>
+        <div className="container-site py-10 md:py-14">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {TOPICS.map((topic) => (
+              <div key={topic} className="flex items-center gap-4">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary-50 text-primary-600">
+                  <Check size={20} className="stroke-[2.5px]" />
+                </div>
+                <p className="text-sm font-semibold text-neutral-800 leading-snug">{topic}</p>
               </div>
             ))}
           </div>
@@ -223,7 +231,7 @@ export default async function HomePage() {
                   com o nome exato: "home-instituto.png"
                 */}
                 <Image
-                  src="/images/home-instituto.png"
+                  src="/images/home-instituto.jpg"
                   alt="Instituto Voz da Alma"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
@@ -250,11 +258,11 @@ export default async function HomePage() {
             <div>
               <p className="section-label">A essência do Instituto</p>
               <h2 className="mb-6 font-display font-bold">
-                Especialistas em {' '}
-                <span className="text-gradient">Desenvolvimento Infantil</span>
+                Especialista em desenvolvimento humano integral em  {' '}
+                <span className="text-gradient">Todas as fases da vida</span>
               </h2>
               <p className="mb-5 text-neutral-600 leading-relaxed">
-                Nossa missão é acolher crianças e famílias com excelência técnica e máxima humanidade. No Instituto Voz da Alma, trabalhamos com intervenção precoce e suporte integral para crianças com atrasos de desenvolvimento, autismo (TEA) e neurodivergências.
+                Nossa missão é acolher crianças adultos e famílias com excelência técnica e máxima humanidade.  No instituto Voz da Alma, atuamos desde a  intervenção precoce até as diferentes fases da vida dando suporte integral para crianças com atrasos de desenvolvimento, neurodivergentes e seus cuidadores.
               </p>
               <p className="mb-8 text-neutral-600 leading-relaxed">
                 Com uma equipe interdisciplinar (Fonoaudiologia, Terapia Ocupacional, Musicoterapia, Psicologia e Psicopedagogia combinada à ABA), nós unimos ciência baseada em evidências a um ambiente lúdico, empático e de acolhimento irrestrito.
@@ -262,9 +270,8 @@ export default async function HomePage() {
 
               <div className="mb-10 space-y-3">
                 {[
-                  'Equipe multidisciplinar especializada em TEA',
                   'Intervenções baseadas em ABA',
-                  'Foco no desenvolvimento de autonomia e fala',
+                  'Foco no desenvolvimento de autonomia em todas as esferas',
                   'Avaliação e treinamento parental',
                 ].map(item => (
                   <div key={item} className="flex items-center gap-3 text-sm text-neutral-700">
@@ -297,15 +304,27 @@ export default async function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="max-w-3xl mx-auto space-y-4">
             {SPECIALTIES.map(({ icon: Icon, title, desc, color }) => (
-              <div key={title} className="card p-6 group cursor-default">
-                <div className={`mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl ${color}`}>
-                  <Icon size={22} />
+              <details key={title} className="group card overflow-hidden cursor-pointer">
+                <summary className="flex items-center justify-between gap-4 p-5 md:p-6 list-none select-none">
+                  <div className="flex items-center gap-4">
+                    <div className={`flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-2xl ${color}`}>
+                      <Icon size={22} />
+                    </div>
+                    <h3 className="text-lg font-bold text-neutral-900 mb-0">{title}</h3>
+                  </div>
+                  <ChevronDown
+                    size={20}
+                    className="flex-shrink-0 text-neutral-400 transition-transform group-open:rotate-180"
+                  />
+                </summary>
+                <div className="px-5 md:px-6 pb-6 pt-0">
+                  <div className="border-t border-neutral-100 pt-5 mt-1">
+                    <p className="text-neutral-600 leading-relaxed">{desc}</p>
+                  </div>
                 </div>
-                <h3 className="mb-3 text-lg font-bold text-neutral-900">{title}</h3>
-                <p className="text-sm text-neutral-500 leading-relaxed">{desc}</p>
-              </div>
+              </details>
             ))}
           </div>
 
@@ -327,7 +346,7 @@ export default async function HomePage() {
             Estimulando habilidades, transformando o futuro.
           </h2>
           <p className="mb-10 text-white/75 max-w-lg mx-auto leading-relaxed">
-            Nós estamos prontos para receber sua família e iniciar um plano terapêutico personalizado que respeite o tempo e as características únicas do seu filho(a).
+            Nós estamos prontos para receber sua família e iniciar um plano terapêutico personalizado que respeite o tempo e as características únicas de cada ser humano.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contato" className="btn-primary bg-white !text-primary-800 hover:bg-primary-50">
@@ -414,7 +433,7 @@ export default async function HomePage() {
                   />
                 </summary>
                 <div className="px-5 pb-5">
-                  <p className="text-sm text-neutral-600 leading-relaxed">{answer}</p>
+                  <p className="text-sm text-neutral-600 leading-relaxed whitespace-pre-line">{answer}</p>
                 </div>
               </details>
             ))}

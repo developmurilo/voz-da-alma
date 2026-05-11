@@ -56,7 +56,7 @@ export default function SobrePage() {
             <p className="section-label text-accent-200">Nossa história</p>
             <h1 className="mb-6 text-white text-4xl lg:text-5xl">Sobre o Instituto Voz da Alma</h1>
             <p className="text-lg text-white/90 leading-relaxed font-body">
-              Uma clínica interdisciplinar especializada no desenvolvimento infantil. Trabalhamos em equipe e com ciência para estimular o desenvolvimento global de crianças com autismo e condições atípicas.
+              O Instituto Voz da Alma é um espaço interdisciplinar dedicado ao desenvolvimento humano em todas as fases da vida. Temos um olhar que abrange principalmente crianças neurodivergentes, com foco no espectro autista e outros transtornos do neurodesenvolvimento.
             </p>
           </div>
         </div>
@@ -70,10 +70,12 @@ export default function SobrePage() {
               <p className="section-label">Nossa missão</p>
               <h2 className="mb-6">Cuidando do futuro com amor e ciência</h2>
               <p className="mb-5 text-neutral-600 leading-relaxed">
-                O Instituto Voz da Alma é uma clínica especializada no desenvolvimento infantil. Nossa equipe é formada por profissionais de excelência em diferentes áreas da saúde que atuam de forma totalmente integrada para apoiar crianças com autismo (TEA), atraso na fala, dificuldades de aprendizagem e outras condições do neurodesenvolvimento inerentes à infância.
+                Nosso objetivo é oferecer um cuidado profissional, capacitado e humanizado, acolhendo de forma individualizada cada pessoa e seu núcleo familiar.
+                Desenvolvemos um plano terapêutico e através de diferentes especialidades terapêuticas, como ABA, terapia ocupacional, fonoaudiologia, psicoterapia e musicoterapia, estruturado de forma individualizada para cada paciente e baseado em evidências científicas, promovendo o desenvolvimento emocional, social, cognitivo e funcional, com atenção especial às necessidades de crianças, adolescentes e adultos.
               </p>
               <p className="mb-8 text-neutral-600 leading-relaxed">
-                Nosso maior objetivo é promover desenvolvimento, autonomia e qualidade de vida por meio de intervenções baseadas em práticas científicas sólidas. Entendemos também que nossa clínica é, antes de tudo, um reduto de acolhimento amoroso e direcionamento ético para todas as famílias que nos procuram.
+                Acreditamos no cuidado intencional, no fortalecimento dos cuidadores e na construção de caminhos de desenvolvimento com respeito ao tempo e à singularidade de cada indivíduo.
+                No Instituto Voz da Alma, acolhemos histórias, fortalecemos vínculos e caminhamos juntos no desenvolvimento do que há de mais precioso: a pessoa e sua família.
               </p>
               <div className="space-y-3">
                 {[

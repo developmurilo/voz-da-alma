@@ -15,43 +15,50 @@ const FAQS = [
   {
     categoria: 'Sobre o Instituto',
     perguntas: [
-      { question: 'O que é o Instituto Voz da Alma?', answer: 'O Instituto Voz da Alma é uma clínica interdisciplinar especializada no desenvolvimento infantil. Nossa equipe é formada por profissionais de diferentes áreas da saúde que atuam de forma integrada para apoiar crianças com desafios no desenvolvimento, como autismo, atraso na fala, dificuldades de aprendizagem, oferecendo um acompanhamento terapêutico personalizado.' },
-      { question: 'Onde fica o Instituto Voz da Alma?', answer: 'O Instituto Voz da Alma está localizado na cidade de Hortolândia, no interior de São Paulo. Atendemos também famílias de diversas cidades da região metropolitana de Campinas, como Campinas, Sumaré, Monte Mor, Paulínia, Valinhos e outras próximas.' },
-      { question: 'Quais especialidades são oferecidas?', answer: 'Nossa clínica oferece atendimento nas áreas de Terapia ABA (Análise do Comportamento Aplicada), Terapia Ocupacional, Fonoaudiologia, Psicoterapia e Musicoterapia. Essa integração permite a construção de um plano terapêutico completo e personalizado.' },
+      { question: 'O que é o Instituto Voz da Alma?', answer: 'O Instituto Voz da Alma é um espaço interdisciplinar dedicado ao desenvolvimento humano em todas as fases da vida. Temos um olhar que abrange principalmente crianças neurodivergentes, com foco no espectro autista e outros transtornos do neurodesenvolvimento.\n\nNosso objetivo é oferecer um cuidado profissional, capacitado e humanizado, acolhendo de forma individualizada cada pessoa e seu núcleo familiar.\nDesenvolvemos um plano terapêutico e através de diferentes especialidades terapêuticas, como ABA, terapia ocupacional, fonoaudiologia, psicoterapia e musicoterapia, estruturado de forma individualizada para cada paciente e baseado em evidências científicas, promovendo o desenvolvimento emocional, social, cognitivo e funcional, com atenção especial às necessidades de crianças, adolescentes e adultos.\n\nAcreditamos no cuidado intencional, no fortalecimento dos cuidadores e na construção de caminhos de desenvolvimento com respeito ao tempo e à singularidade de cada indivíduo.\n\nNo Instituto Voz da Alma, acolhemos histórias, fortalecemos vínculos e caminhamos juntos no desenvolvimento do que há de mais precioso: a pessoa e sua família.' },
+      { question: 'Onde fica o Instituto Voz da Alma?', answer: 'O Instituto Voz da Alma está localizado na cidade de Hortolândia, no interior de São Paulo.\nAtendemos também famílias de diversas cidades da região metropolitana de Campinas, como Campinas, Sumaré, Monte Mor, Paulínia, Valinhos e outras cidades próximas.' },
+      { question: 'Quais especialidades são oferecidas?', answer: 'Nossa clínica oferece atendimento interdisciplinar nas áreas de:\n    • Terapia ABA (Análise do Comportamento Aplicada)\n    • Terapia Ocupacional\n    • Fonoaudiologia\n    • Psicoterapia\n    • Musicoterapia\nEssa integração entre diferentes especialidades permite a construção de um plano terapêutico completo e personalizado, respeitando as necessidades específicas de cada crianças, adolescestes, adultos e suas famílias.' }
     ],
   },
   {
-    categoria: 'Sobre Autismo (TEA)',
+    categoria: 'Sobre Autismo',
     perguntas: [
-      { question: 'O que é o Transtorno do Espectro Autista (TEA)?', answer: 'O Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento que afeta principalmente a comunicação, a interação social e o comportamento. Cada criança no espectro autista apresenta necessidades diferentes, por isso o acompanhamento deve ser individual.' },
-      { question: 'Quais são os sinais de autismo em crianças?', answer: 'Alguns sinais incluem dificuldade de contato visual, atraso na fala, dificuldade de interação social, comportamentos repetitivos e sensibilidade sensorial (sons, texturas, luzes). Uma avaliação profissional é importante para compreender o desenvolvimento.' },
-      { question: 'Com quantos anos o autismo pode ser identificado?', answer: 'Os primeiros sinais podem surgir entre 12 e 24 meses de idade. Quanto mais cedo são identificados, maiores as possibilidades de intervenção e desenvolvimento de habilidades importantes.' },
-      { question: 'Autismo tem cura?', answer: 'O autismo não é uma doença, mas sim uma condição do neurodesenvolvimento, por isso não se fala em cura. Intervenções terapêuticas adequadas ajudam a desenvolver comunicação, interação social e autonomia, contribuindo para a qualidade de vida.' },
+      { question: 'O que é o Transtorno do Espectro Autista (TEA)?', answer: 'O Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento que afeta principalmente a comunicação, a interação social e o comportamento.\nO termo "espectro" indica que as características podem variar bastante de pessoa para pessoa, tanto na intensidade quanto na forma como se manifestam.\nCada pessoa no espectro autista apresenta necessidades e habilidades diferentes, por isso o acompanhamento terapêutico deve ser individualizado.' },
+      { question: 'Quais são os sinais de autismo em crianças?', answer: 'Alguns sinais que podem indicar a necessidade de uma avaliação especializada incluem:\n    • dificuldade de contato visual\n    • atraso na fala ou na comunicação\n    • dificuldade de interação social\n    • comportamentos repetitivos\n    • sensibilidade sensorial a sons, texturas ou luzes\nA presença desses sinais não significa necessariamente autismo, mas indica que uma avaliação profissional pode ser importante para compreender melhor o desenvolvimento da criança.' },
+      { question: 'Com quantos anos o autismo pode ser identificado?', answer: 'Os primeiros sinais do autismo podem surgir entre 12 e 24 meses de idade.\nNo entanto, o diagnóstico pode ocorrer em diferentes fases da infância, dependendo das características apresentadas e do desenvolvimento de cada pessoa.\nAtualmente, com o avanço dos estudos, muitos adolescentes e adultos tem recebido diagnósticos, mesmo que mais tardios, e tem sido acompanhados com as terapias necessárias para ajuda-los a lidar com suas necessidades.\nQuanto mais cedo os sinais são identificados e acompanhados, maiores são as possibilidades de intervenção e desenvolvimento de habilidades importantes.' },
+      { question: 'Autismo tem cura?', answer: 'O autismo não é considerado uma doença, mas sim uma condição do neurodesenvolvimento. Por isso, não se fala em cura.\nNo entanto, intervenções terapêuticas adequadas podem ajudar a desenvolver habilidades importantes, como comunicação, interação social e autonomia, contribuindo significativamente para a qualidade de vida.' },
     ],
   },
   {
     categoria: 'Sobre as Terapias',
     perguntas: [
-      { question: 'O que é terapia ABA?', answer: 'A terapia ABA (Análise do Comportamento Aplicada) é uma abordagem científica amplamente utilizada no desenvolvimento de habilidades em crianças com autismo. Trabalha o desenvolvimento social, comunicação, autonomia e comportamento por meio de estratégias de aprendizagem estruturadas.' },
-      { question: 'O que faz um terapeuta ocupacional?', answer: 'A terapia ocupacional infantil ajuda crianças a desenvolver habilidades motoras, sensoriais e funcionais para as atividades do dia a dia, como coordenação motora, autonomia e organização sensorial.' },
-      { question: 'Quando procurar um fonoaudiólogo?', answer: 'O acompanhamento pode ser indicado quando a criança apresenta atraso na fala, dificuldade de comunicação, dificuldade na articulação das palavras ou dificuldades relacionadas à alimentação.' },
-      { question: 'O que é musicoterapia?', answer: 'A musicoterapia é uma abordagem terapêutica que utiliza elementos musicais (ritmo, melodia, som) para estimular habilidades cognitivas, emocionais e sociais, favorecendo a expressão e comunicação.' },
+      { question: 'O que é terapia ABA?', answer: 'A terapia ABA (Análise do Comportamento Aplicada) é uma abordagem científica amplamente utilizada no desenvolvimento de habilidades em crianças adolescentes e adultos autistas e outras condições do neurodesenvolvimento, ou até mesmo para o desenvolvimento de pessoas não diagnosticadas.\nEssa abordagem trabalha o desenvolvimento de habilidades sociais, comunicação, autonomia e comportamento por meio de estratégias estruturadas de aprendizagem.' },
+      { question: 'O que faz um terapeuta ocupacional?', answer: 'A terapia ocupacional infantil ajuda crianças a desenvolver habilidades motoras, sensoriais e funcionais necessárias para as atividades do dia a dia.\nIsso inclui habilidades relacionadas à coordenação motora, autonomia, organização sensorial e participação em atividades importantes da rotina.' },
+      { question: 'Quando procurar um fonoaudiólogo?', answer: 'O acompanhamento com fonoaudiologia pode ser indicado quando a criança apresenta:\n    • atraso na fala\n    • dificuldade de comunicação\n    • dificuldade na articulação das palavras\n    • dificuldades relacionadas à alimentação\nA intervenção precoce pode ajudar significativamente no desenvolvimento da comunicação e da linguagem.' },
+      { question: 'O que é musicoterapia?', answer: 'A musicoterapia é uma abordagem terapêutica que utiliza elementos musicais como ritmo, melodia e som para estimular habilidades cognitivas, emocionais e sociais.\nEssa abordagem pode ser especialmente benéfica para crianças com autismo e outras condições do neurodesenvolvimento, favorecendo a comunicação, a expressão emocional e a interação social.' },
     ]
   },
   {
-    categoria: 'Avaliação e Tratamento',
+    categoria: 'Sobre Avaliação',
     perguntas: [
-      { question: 'Como funciona a avaliação inicial?', answer: 'A avaliação busca compreender o desenvolvimento da criança de forma ampla, envolvendo entrevista com os pais, análise do histórico, observação clínica e aplicação de protocolos. A partir disso, define-se o plano terapêutico.' },
-      { question: 'Quanto tempo dura uma avaliação e o tratamento?', answer: 'A avaliação pode durar uma ou mais sessões. O tempo do tratamento varia conforme as necessidades da criança, sendo o plano ajustado periodicamente.' },
-      { question: 'As terapias são individuais?', answer: 'Sim. Na maioria dos casos são individualizadas para atender as necessidades específicas de cada criança. Em algumas situações podem ocorrer atividades em pequenos grupos.' },
-      { question: 'Os pais participam do processo terapêutico?', answer: 'Sim. A participação da família é fundamental. Os pais recebem orientações e estratégias que podem ser aplicadas no ambiente familiar para potencializar o processo.' },
+      { question: 'Como funciona a avaliação inicial?', answer: 'O processo de avaliação inicial busca compreender o desenvolvimento da criança de forma ampla.\nGeralmente envolve:\n    • entrevista com os pais ou responsáveis\n    • análise do histórico de desenvolvimento da criança\n    • observação clínica\n    • aplicação de protocolos e instrumentos específicos, quando necessário\nCom base nessa avaliação, a equipe define um plano terapêutico personalizado.' },
+      { question: 'Quanto tempo dura uma avaliação?', answer: 'A avaliação pode envolver uma ou mais sessões, dependendo das necessidades da criança e das áreas que precisam ser analisadas.\nCada caso é único, e o processo é conduzido com cuidado para garantir uma compreensão completa do desenvolvimento da criança.' },
     ]
   },
   {
-    categoria: 'Atendimento',
+    categoria: 'Sobre o Tratamento',
     perguntas: [
-      { question: 'A clínica atende convênios?', answer: 'Alguns convênios podem ser aceitos diretamente ou utilizados por meio de reembolso. Recomendamos entrar em contato com nossa equipe para obter informações atualizadas.' },
-      { question: 'Como agendar uma avaliação?', answer: 'O agendamento pode ser realizado entrando em contato conosco pelo WhatsApp ou pelos canais do site. Orientaremos sobre os próximos passos.' },
+      { question: 'Quanto tempo dura o tratamento?', answer: 'O tempo de acompanhamento varia de acordo com as necessidades e objetivos terapêuticos de cada criança.\nO plano terapêutico é acompanhado e ajustado periodicamente conforme a evolução do desenvolvimento.' },
+      { question: 'As terapias são individuais?', answer: 'Sim. Na maioria dos casos, as intervenções são realizadas de forma individualizada para atender às necessidades específicas de cada criança.\nEm algumas situações, podem ocorrer atividades em conjunto ou em pequenos grupos para estimular habilidades sociais e de interação.' },
+      { question: 'Os pais participam do processo terapêutico?', answer: 'Sim. A participação da família é fundamental para potencializar o desenvolvimento da criança.\nDurante o acompanhamento, os pais recebem orientações e estratégias que podem ser aplicadas também no ambiente familiar, fortalecendo o processo terapêutico.' },
+    ]
+  },
+  {
+    categoria: 'Sobre Atendimento',
+    perguntas: [
+      { question: 'A clínica atende convênios?', answer: 'Alguns convênios podem ser aceitos diretamente ou utilizados por meio de reembolso, dependendo do plano de saúde.\nPara obter informações atualizadas sobre convênios e formas de atendimento, recomendamos entrar em contato com nossa equipe.' },
+      { question: 'Como agendar uma avaliação?', answer: 'O agendamento pode ser realizado entrando em contato com nossa equipe por meio do WhatsApp ou pelos canais de atendimento disponíveis no site.\nNossa equipe irá orientar os pais sobre o processo de avaliação inicial e os próximos passos.' },
+      { question: 'O Instituto Voz da Alma atende crianças de quais cidades?', answer: 'O Instituto Voz da Alma está localizado em Hortolândia, mas atende famílias de diversas cidades da região, como:\n    • Hortolândia\n    • Campinas\n    • Sumaré\n    • Monte Mor\n    • Paulínia\n    • Valinhos\nAlém dessas cidades, também atendemos famílias de outras localidades da região metropolitana de Campinas.' },
     ]
   }
 ]
@@ -97,7 +104,7 @@ export default function FaqPage() {
                         <ChevronDown size={18} className="flex-shrink-0 text-neutral-400 transition-transform group-open:rotate-180" />
                       </summary>
                       <div className="border-t border-neutral-50 px-5 pb-5 pt-4">
-                        <p className="text-sm text-neutral-600 leading-relaxed">{answer}</p>
+                        <p className="text-sm text-neutral-600 leading-relaxed whitespace-pre-line">{answer}</p>
                       </div>
                     </details>
                   ))}
